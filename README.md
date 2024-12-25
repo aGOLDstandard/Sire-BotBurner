@@ -1,8 +1,6 @@
 # Sire-BitBurner-Botnet
-Main distro channel for the story-oriented "Sire" botnet for the game, "BitBurner".<br/>
-<br/>
-    Yes, unfortunately the repo is empty for now. the "source code" has hardly been written(to publish-ready degree), and needs to be cleaned up. See test/beta branches(coming soonTM) for more on that.
-<br/>
+Yes, unfortunately the repo is empty for now. The "source code" has hardly been written(to publish-ready degree), and needs to be cleaned up. See test/beta branches(coming soonTM) for more on that. I had to figure out a better way to write and file manage than in-game, as the constant testing of fatal scripts, deletions, etc was causing some serious save file corruption issues. The idea behind it was always to get it out to the world, if for nothing more than proof-of-concepts to myself, so I decided to go ahead and set up shop :D
+<br/> <br/>
 My ADHD is a nightmare and is exhausting :D
 Because of that, this particular "one" (me) could not simply "learn JavaScript". I had to challenge myself. This botnet is being written under a few different constraints.
 <br/>
