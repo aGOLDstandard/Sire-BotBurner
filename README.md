@@ -1,9 +1,8 @@
 # Sire_Alpha
 > If your here, thank you! And welcome to the Sire alpha program!<br/>
----
+
 I have a LOT of code bites from two slightly different build attempts as I've grown over my learning journey. I feel like I'm close enough to start releasing little bits here. As of now, this is the "working repo". Starting off slow as there are some bits and pieces to the story, and some comments to myself (I'm brutal at me.) that may need to be removed/modified before introduction. Starting up, we have have two folders to straighten out. For now, we'll assume that the "bldwrms" folder is good to go, as it will be cruicial for the next "big step" in building Sire, and should be more than functional for that(for now). First, I need to get the current working library in order by separating it into smaller libraries, so ~~my ADHD can finally stop having it's aneurism~~ I can create a code base that is easier for me to maintain despite my learning difference :D. This can be repacked for simplicity later.<br/>
 <br/>
----
 
 #### /lib
 - I've moved the original library file, "sirelib.js", into it's own folder for *unpacking*. As of initial posting, I've only unpacked the text formatting stuff into "textLib.js". In order to clean this up before moving on, I need to break the *story stuff* out of the current lib. Eventually I may create a "/diag" subdirectory to handle different premade character lines. For now, The initial to-do list for /lib:<br/>
