@@ -1,17 +1,27 @@
-# Sire-BitBurner-Botnet
-Yes, unfortunately the repo is (mostlyTM)empty for now. The "source code" has hardly been written(to publish-ready degree), and needs to be cleaned up. See test/beta branches(coming soonTM) for more on that. I had to figure out a better way to write and file manage than in-game, as the constant testing of fatal scripts, deletions, etc was causing some serious save file corruption issues. The idea behind it was always to get it out to the world, if for nothing more than proof-of-concepts to myself, so I decided to go ahead and set up shop :D
-<br/> <br/>
-My ADHD is a nightmare and is exhausting :D
-Because of that, this particular "one" (me) could not simply "learn JavaScript". I had to challenge myself. This botnet is being written under a few different constraints.
+# Sire_Alpha
+> If your here, thank you! And welcome to the Sire alpha program!<br/>
+---
+I have a LOT of code bites from two slightly different build attempts as I've grown over my learning journey. I feel like I'm close enough to start releasing little bits here.<br/>
+As of now, this is the "working repo". Starting off slow as there are some bits and pieces to the story, and some comments to myself (I'm brutal at me.) that may need to be<br/>
+removed/modified before introduction. Starting up, we have have two folders to straighten out. For now, we'll assume that the "bldwrms" folder is good to go, as it will be<br/>
+cruicial for the next "big step" in building Sire, and should be more than functional for that(for now). First, I need to get the current working library in order by separating it<br/>
+into smaller libraries, so ~~my ADHD can finally stop having it's aneurism~~ I can create a code base that is easier for me to maintain despite my learning difference :D. This<br/>
+can be repacked for simplicity later.<br/>
 <br/>
 
-# Number 1:
-The entire project is really designed to help me teach myself JavaScript, and that is still it's core function as of now. While I might love some help with things, the basic idea is: "If I can't understand the logic behind it, then it stays in beta/test until I can." If you have a knack for teaching olds dogs new tricks, please free to email me at SireNet@tuta.io. (This email can also be found on my GitHub profile.) <br/>
-
-# Number 2: (spoiler for new burners)
-BitBurner has a way of teaching via locking stuff out from you. It's a neat concept, and I'm definitely someone who gets ahead of myself. I wanted to challenge myself to learn as much as I could pack into just that starting 8Gb of RAM. This is the absolute ceiling for the build, however I do intend to release new versions that break this in order to provide more for the end-youser. <br/>
-
-# Number 3:
-When learning a new skill, it is often not the intelligence of the student, nor the subject matter itself that makes steep learning curves difficult. It is the relevance of the material to the student. I am not only teaching myself, but being ADHD means that creating these points of relevance has shifted the initial learning project from one of conceptual proofs, into a living breathing machine. A story has evolved from the code, very losely based on the TV show, "The Strain". I wanted to provide something more to BitBurner, my own little flavor if you will. Nameing variables with cute names as easy reminders has become an absolutely full on story-driven build. This marks the 3rd and final challenge. In the end, the botnet files here will be short and sweet. Story files will be passed to the user after certain challenges met, just like the game. I want the versions of Sire to be less like "Sire Version 1.0" and more like "Sire Season 1"<br/>
+#### /lib
+- I've moved the original library file, "sirelib.js", into it's own folder for *unpacking*. As of initial posting, I've only unpacked the text formatting stuff into "textLib.js".<br/>
+In order to clean this up before moving on, I need to break the *story stuff* out of the current lib. Eventually I may create a "/diag" subdirectory to handle different premade<br/> 
+character lines. For now, The initial to-do list for /lib:<br/>
 <br/>
-To be continued...
+    - [] Move all the extrenuous dialog stuff from BITE subprotocols "SEIGE" and "INFECTION" into a "diagLib.js".
+    - [] *Need to add a modular function to textLib that will tprint or print a given string 1 letter at a time, and w/ 'X'ms pause between each addition.*
+    - [] Replace all of aforementioned dialog with simple, "more official", console prints and UX stuff (can skip over INFECTION, see below).
+    - [] Create a new "wakelib.js" to isolate the whole file transfer mess in INFECTION within sirelib. (Should make this more modular anyways. Designed towards<br/> 
+    replicating(TM) an FTP transfer, with file upload verification. We'll call it "Wake-Infection-Protocol" for now (If you just got that, welcome to the team, your<br/> 
+    coffee is on your desk, champ! :D )
+    - [] Need to make a little js calculator utility for my VS environment to figure up what the in-game RAM will be after making adjustments<br/> 
+    (I don't want to use the BitBurner extension, I'm already up to my eyeballs and personally don't need the file pushing stuff)
+    - [] IF during the course of building the WIP I think it may be a good idea (which I may) I might end up doing some goofing to the "wake.js" file in /bldwrms.<br/> 
+    This is only because networking stuff was my first big "aw wow cool!" in the journey that's brought me here, and I've actually never used ns' networking functions.<br/> 
+    I might implement it to "simulate" our "TCP/IP connection" for WIP, but we'll see.

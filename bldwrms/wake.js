@@ -1,5 +1,6 @@
 /** @param {NS} ns */
 export async function main(ns) {
+  // Note: I have some sweet art I want to slap up here for the mission statement, "but keeping it on hold" for now.
   // ----- Identity Vars: ----- //
 
     // --Targeting:

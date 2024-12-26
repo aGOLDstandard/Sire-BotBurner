@@ -5,11 +5,11 @@ export async function main(ns) {
     //--------------------------------------------------------------------------------------------------------------//
     
     // 1.) IF our target's sec level is greater or equal to the Base level, then chances are we may have just
-          // soft reset, and need to really dig away at the target's security mainly, and juice up their booty pockets
+          // soft reset, and need to really dig away at the target's security mainly, and juice up their booty pockets    } Why am I not going on player level for this? I don't think thats even a singularity thing ROFL!
           // before we consider an actual "attack". We're uh.....a symbiotic parasite >:] scratching backs and what-not.
     
     // 2.) ELSE, we need to double check IF those pockets are nice and fat before we run the typical sca-
-          // I mean uh...Before we take our payment for services rendered ;) >:] We tried to stuff em a little
+          // I mean uh...'Before we take our payment for services rendered' ;) >:] We tried to stuff em a little
           // while we hit Security, but it wasn't the main focus until now. That is, now that the
           // badge-jockeys have been sorted. 
     
@@ -61,8 +61,8 @@ export async function main(ns) {
       const isDefcon3 = secLevel >= secThreshA && secLevel < secAlarm; // True if between A and Alarm
       const isDefcon4 = secLevel >= secAlarm; // True if Security levels are just geting straight up out of hand...
         // Action Codes:
-      // Something like "codeBlack = secAlarm && monAlarm === true,
-          // or "codeGreen = isDefcon3 == false && monLevel < monThreshB == true"
+      // Something like "codeBlack = secAlarm && monAlarm,
+          // or "codeGreen = !isDefcon3 && monLevel < monThreshB"
     
       // -----------------------------------------------  
       while (defcon) {
